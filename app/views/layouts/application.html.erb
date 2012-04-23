@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deeptex</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+ <div id="container">
+<div id="top-container">
+          	<!-- begin of logo and mainmenu -->
+        	<div id="header">
+            	<div id="logo"><a href="index-2.html"><img src="assets/deeplogo.png" alt="" /></a></div>
+                <div id="mainmenu">
+                    <ul class="navigation">
+                        <li class="current"><a href="index-2.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a>
+                        	<ul>
+                                <li><a href="services-detail.html">Services detail</a></li>
+                                <li><a href="single.html">Single pages</a></li>
+                                <li><a href="fullwidth.html">Fullwidth page</a></li>
+                                <li><a href="index-alt.html">Home alternate</a></li>
+                                <li><a href="index-alt2.html">Home alternate 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of logo and mainmenu -->
+       <%= yield %>
+
+      <!-- BEGIN OF FOOTER -->
+        <div id="bottom-container">
+        	<div id="footer-content">
+
+            	<!-- begin of footer-address -->
+            	<div id="footer-address">
+                <img src="images/footer-logo.png" alt="" />
+                <p>Imperium Tower - 15 Kuningan Raya 54th Street 14th Floor, Jakarta,  DKI 10220, Indonesia</p>
+                <p>Telp : +1 234 567 8910, Fax : +1 234 567 1098<br/>Email : info@vulcan.com, support@vulcan.com</p>
+                </div>
+                <!-- end of footer-address -->
+
+                <!-- begin of company-news -->
+                <div id="footer-news">
+                <h3>Company News</h3>
+                    <ul class="list-bottom">
+                        <li><a href="#">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse - <strong>23 May 2010</strong></a></li>
+                        <li><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis - <strong>14 May 2010</strong></a></li>
+                        <li><a href="#">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit - <strong>05 May 2010</strong></a></li>
+                        <li><a href="#">Temporibus autem quibusdam et aut officiis debitis rerum necessitatibus - <strong>22 April 2010</strong></a></li>
+                    </ul>
+                </div>
+                <!-- end of company-news -->
+
+                <!-- begin of footer-menu and copyright -->
+                <div id="footer-last">
+                	<div id="footer-menu">
+                        <ul class="navigation-footer">
+                            <li class="current"><a href="index-2.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div id="footer-copyright">
+                    Copyright © 2010 Vulcan Company.  All rights reserved
+                    </div>
+                </div>
+                <!-- end of footer-menu and copyright -->
+
+            </div>
+        </div>
+        <!-- END OF FOOTER -->
+  </div>
+
+
+</body>
+</html>
